@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+    @import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .container{
+      width: 50vw;
+      height: 77vh;
+      margin: auto;
+      align-content: center;
+      display: flex;
+    }
+    div{
+      width: 50%;
+      height: 39vh;
+      align-self: center;
+      padding: 2em;
+      color: white;
+    }
+    .one{
+      background-color: hsl(31, 77%, 52%);
+      border-radius: .6em 0 0 .6em;
+    }
+    .two{background-color: hsl(184, 100%, 22%);}
+    .three{
+      background-color: hsl(179, 100%, 13%);
+      border-radius: 0 .6em .6em 0;
+    } 
+    .three>p{
+      padding: .902em;
+    } 
+    div>h1{
+      padding: .4em 0;
+      text-transform:uppercase;
+      font-size: 1.6em;
+      font-family: 'Big Shoulders Display';
+      font-weight: 700;
+    }
+    p{
+      margin: 1em 0;
+      padding: 1em;
+      font-family: 'Lexend Decand';
+      font-weight: 400;
+    }
+    button{
+      width: 9em;
+      padding: .8em;
+      border: none;
+      border-radius: 2em;
+      cursor: pointer;
+    }
+    .btn1{color: hsl(31, 77%, 52%);}
+    .btn2{ color: hsl(184, 100%, 22%);}
+    .btn3{color: hsl(179, 100%, 13%);}
+    .btn1:hover{
+      background-color: #FFD473;
+      color: white;
+    }
+    .btn2:hover{
+      background-color: #26B5C0;
+      color: white;
+    }
+    .btn3:hover{
+      background-color: #19B89D;
+      color: white;
+    }
+    
+    @media only screen and (min-width:375px) {
+      .container{
+        flex-direction: column;
+        height: 130vh;
+        width: 70vw;
+      }
+      div{
+        height: 28%;
+        width: 80%;
+      }
+      p{
+        padding-left: 0;
+      }
+      .one{
+        border-radius: .6em .6em 0 0;
+      }
+      .three{
+        border-radius: 0 0 .6em .6em;
+      }
+    }
+    @media screen and (min-width:1440px) {
+      .container{
+        flex-direction: row;
+        height: 80vh;
+      }
+      div{
+        height: 45%;
+      }
+    .one{
+      background-color: hsl(31, 77%, 52%);
+      border-radius: .6em 0 0 .6em;
+    }
+    .two{background-color: hsl(184, 100%, 22%);}
+    .three{
+      background-color: hsl(179, 100%, 13%);
+      border-radius: 0 .6em .6em 0;
+    } 
+    .three>p{
+      padding: .902em;
+    }
+    }
+
+  </style> 
+</head>
+<body>
+  <div class="container">
+    <div class="one">
+      <img src="images/icon-sedans.svg" alt="">
+      <h1>Sedans</h1> 
+      <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.
+      </p> 
+      <button type="submit" class="btn1">Learn More</button>
+    </div>
+    
+    <div class="two">
+      <img src="images/icon-suvs.svg" alt="">
+      <h1>SUVs</h1>
+      <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.
+      </p>
+      <button type="submit" class="btn2">Learn More</button>
+    </div>
+    
+    <div class="three">
+      <img src="images/icon-luxury.svg" alt="">
+      <h1>Luxury</h1>
+      <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.
+      </p>
+      <button type="submit" class="btn3">Learn More</button>
+    </div>
+  </div>
+  
+   
+  
+  <section class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Chromecodes" target="_blank">Fayomi Ayomide</a>.
+  </section>
+</body>
+</html>
